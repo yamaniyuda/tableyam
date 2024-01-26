@@ -1,0 +1,17 @@
+.row--action--sticky {
+  @apply p-0 bg-white right-0;
+}
+
+.row--action--sticky::after {
+  content: '';
+  @apply absolute right-0 top-0 bottom-0 translate-x-[-100%] shadow-table-column-fix-shadow w-[100%];
+}
+
+.row--action--sticky::before {
+  content: '';
+  @apply absolute right-0 top-0 left-0 bottom-0 w-[100%] bg-white;
+}
+
+.row--action {
+  @apply sticky right-0;
+}
